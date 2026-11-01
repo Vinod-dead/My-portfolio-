@@ -5,7 +5,7 @@
  * the 3D world for unknown ids falls back to a generic island theme.
  */
 
-import { URL } from "node:url";
+
 
 export type ProjectStatus = "project" | "in-progress" | "concept";
 
@@ -17,6 +17,7 @@ export interface Project {
   features: string[];
   stack: string[];
   repo: string | null;
+  demo: string | null;
   /** Accent colour for this project's world */
   accent: string;
   /** Which 3D world to show */
@@ -36,6 +37,7 @@ export const projects: Project[] = [
     ],
     stack:  ["[PLACEHOLDER:HTML5, CSS3, JavaScript, Node.js, Express.js, Nebius Token Factory API (openai/gpt-oss-120b), SQLite (better-sqlite3), WebSockets, JWT, npm, and Docker. ]"],
     repo: "https://github.com/Vinod-dead/QuizForze",
+    demo: "string | null", 
     accent: "#5ab0ff",
     world: "quiz",
     dialogue:
@@ -46,12 +48,13 @@ export const projects: Project[] = [
     name: "Multi-Agent Travel Planner",
     status: "project",
     summary:
-      "An intelligent travel-planning system that coordinates specialized AI agents to organize a trip around the traveler's preferences and budget.",
+      " An intelligent travel-planning system that coordinates specialized AI agents to organize a trip around the traveler's preferences and budget.",
     features: [
-      "[PLACEHOLDER: describe each agent and what it does, e.g. itinerary, budget, logistics]",
+      "[PLACEHOLDERS:Travel Orchestrator: Coordinates all agents; Destination Research: Researches destinations and attractions; Flight Search: Finds flight options; Accommodation: Finds hotels and stays; Transportation: Plans local travel and transfers; Activity Planning: Recommends activities and experiences; Budget Management: Estimates and tracks expenses; Final Plan: Combines everything into a personalized itinerary.]",
     ],
-    stack: ["[PLACEHOLDER: add the real tech stack]"],
-    repo: null,
+    stack: ["[PLACEHOLDERS:Python, LangGraph, OpenAI Agents SDK, NVIDIA Nemotron 3.5 Lightning (LLM), AsyncOpenAI, FastAPI, Pydantic, Supabase (optional persistence), Tavily, Firecrawl, Playwright/Stagehand, Pytest, and Git/GitHub.]"],
+    repo: "https://github.com/Vinod-dead/multi-agent-travel-planner.git",
+    demo: "string | null",
     accent: "#4fe3c1",
     world: "travel",
     dialogue:
@@ -62,12 +65,13 @@ export const projects: Project[] = [
     name: "Smart Dunning agent",
     status: "project",
     summary:
-      "Smart Dunning Agent is an AI-powered revenue recovery system that analyzes failed recurring payments, retrieves historical recovery patterns, recommends intelligent recovery actions, generates personalized customer messages, and provides validated decisions with audit reasoning and recovery analytics.",
+      " Smart Dunning Agent is an AI-powered revenue recovery system that analyzes failed recurring payments, retrieves historical recovery patterns, recommends intelligent recovery actions, generates personalized customer messages, and provides validated decisions with audit reasoning and recovery analytics.]",
     features: [
-      "AI-powered payment failure analysis, historical recovery-pattern retrieval, intelligent recovery recommendations, structured output validation, personalized customer messages, and AI vs. baseline recovery analytics.]",
+      "[PLACEHOLDERS:AI-powered payment failure analysis, historical recovery-pattern retrieval, intelligent recovery recommendations, structured output validation, personalized customer messages, and AI vs. baseline recovery analytics.]",
     ],
-    stack: ["[Python, FastAPI, React, Vite, JavaScript, Recharts, LLM API, JSON-based retrieval data, and synthetic transaction datasets.]"],
+    stack: ["[PLACEHOLDERS:Python, FastAPI, React, Vite, JavaScript, Recharts, LLM API, JSON-based retrieval data, and synthetic transaction datasets.]"],
     repo: "https://github.com/Vinod-dead/smart-dunning--agent",
+    demo: "string | null",
     accent: "#b7a4ff",
     world: "flow",
     dialogue:

@@ -43,12 +43,11 @@ export const portfolio = {
   ],
 
   links: {
-    email: null as string | null, // e.g. "you@example.com"
-    github: null as string | null, // e.g. "https://github.com/your-handle"
-    linkedin: null as string | null, // e.g. "https://www.linkedin.com/in/your-handle"
-    resume: null as string | null, // e.g. "/resume.pdf" (put the file in /public)
-  },
-
+    email: "vinodreddy7629@gmail.com",
+    github: "https://github.com/Vinod-dead",
+    linkedin:  "https://www.linkedin.com/in/vinod-reddy-808810v/",
+    resume: ""
+  }
   /**
    * The contact form posts to /api/contact, which forwards to the URL in the
    * CONTACT_FORWARD_URL environment variable (e.g. a Formspree endpoint).
